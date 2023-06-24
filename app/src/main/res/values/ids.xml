@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="harcama_tutar_textview" type="id" />
+    <item name="harcama_aciklama_textview" type="id" />
+    <item name="fragment_container" type="id" />
+    <item name="aidat_edittext" type="id" />
+    <item name="aidat_tarihi_edittext" type="id" />
+    <item name="buttonPlakalar" type="id" />
+</resources>

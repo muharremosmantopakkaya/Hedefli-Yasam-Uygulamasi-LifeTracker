@@ -1,0 +1,50 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="173dp"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:onClick="card"
+    android:longClickable="true"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="15dp"
+    android:padding="8dp"
+    android:layout_margin="13dp">
+
+    <LinearLayout
+        android:layout_width="173dp"
+        android:layout_height="80dp"
+        android:background="@drawable/dnee"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/harcama_tutar_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harcama_aciklama_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+android:layout_marginLeft="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/harcama_tarih_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

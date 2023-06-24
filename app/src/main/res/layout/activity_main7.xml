@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/diyet_baslik_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/ssss"
+        android:text="Diyet Önerileri"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/diyet_oneri_1_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Sabah kahvaltınızda protein ağırlıklı yiyecekler tüketin (örneğin yulaf ezmesi, yoğurt, tam buğday ekmeği)"
+                android:textSize="18sp"
+                android:padding="16dp"/>
+
+            <TextView
+                android:id="@+id/diyet_oneri_2_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Öğle ve akşam yemeklerinde sebzeler öğünün yarısını oluştursun"
+                android:textSize="18sp"
+                android:padding="16dp"/>
+
+            <TextView
+                android:id="@+id/diyet_oneri_3_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Ara öğünlerde meyve, badem gibi sağlıklı atıştırmalıklar tüketin"
+                android:textSize="18sp"
+                android:padding="16dp"/>
+
+            <TextView
+                android:id="@+id/diyet_oneri_4_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Haftada en az 3 kez egzersiz yapın"
+                android:textSize="18sp"
+                android:padding="16dp"/>
+            <TextView
+                android:id="@+id/diyet_oneri_5_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Yeşil Çay İçin ve tuzu hayatınızdan çıkarın."
+                android:textSize="18sp"
+                android:padding="16dp"/>
+
+            <TextView
+                android:id="@+id/diyet_oneri_6_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Düzenli su için ve uykusuzluktan kaçının."
+                android:textSize="18sp"
+                android:padding="16dp"/>
+            <TextView
+                android:id="@+id/diyet_oneri_7_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. İçeceklerde şekerli içecekleri ve alkollü içecekleri sınırlayın"
+                android:textSize="18sp"
+                android:padding="16dp"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/ssss"
+                android:onClick="geriii"
+                android:text="Geri"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

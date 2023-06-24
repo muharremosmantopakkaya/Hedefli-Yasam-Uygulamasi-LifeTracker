@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FF0000" /> <!-- Kaydırma çubuğunun rengini burada ayarlayabilirsiniz -->
+    <corners android:radius="2dp" /> <!-- Kaydırma çubuğunun köşelerini burada ayarlayabilirsiniz -->
+    <size android:width="3dp" android:height="80dp" /> <!-- Kaydırma çubuğunun genişliğini ve yüksekliğini burada ayarlayabilirsiniz -->
+</shape>

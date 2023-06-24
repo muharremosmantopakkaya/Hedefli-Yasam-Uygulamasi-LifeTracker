@@ -1,0 +1,95 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.goalguru'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.goalguru"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    viewBinding {
+        enabled = true
+    }
+    buildFeatures{
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_16
+        targetCompatibility JavaVersion.VERSION_16
+    }
+}
+
+dependencies {
+    implementation 'com.firebaseui:firebase-ui-database:8.0.2'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-firestore:24.6.1'
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+    implementation 'com.google.firebase:firebase-database:20.2.2'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+   // implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation 'com.github.TutorialsAndroid:GButton:v1.0.19'
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'androidx.preference:preference:1.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.firebase:firebase-bom:32.1.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.rmtheis:tess-two:9.0.0'
+    implementation 'com.google.firebase:firebase-storage:20.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+    implementation 'com.opencsv:opencsv:5.4'
+    implementation 'com.google.firebase:firebase-database:20.2.2'
+    // Diğer bağımlılıkların yer aldığı kısım
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    def lottieVersion = '3.4.1'
+    implementation "com.airbnb.android:lottie:${lottieVersion}"
+    implementation 'com.google.android.material:material:1.9.0'
+
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+
+    implementation 'com.kyleduo.switchbutton:library:2.1.0'
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.4'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'com.github.clans:fab:1.6.4'
+
+    implementation 'com.google.android.material:material:1.4.0'
+
+
+}
+
+// 'com.google.gms.google-services' eklentisini uygulamaya gerek yok, zaten yukarıda belirtildi

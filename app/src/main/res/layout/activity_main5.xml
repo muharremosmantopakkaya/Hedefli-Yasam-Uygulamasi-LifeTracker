@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/your_image"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/para_yonetimi_butonu"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/buttonum"
+        android:onClick="paraYonetimiEkraninaGit"
+        android:text="Para Yönetimi"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/vucut_butonu"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/buttonum"
+        android:onClick="vucutEkraninaGit"
+        android:text="Vücut Kitle Endeksine Göre Fitness Önerileri"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/kilo_butonu"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonum"
+        android:elevation="4dp"
+        android:onClick="kiloEkraninaGit"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:text="Kilo Yönetimi"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:transitionName="button_transition" />
+
+    <Button
+        android:id="@+id/oruc_butonu"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonum"
+        android:elevation="4dp"
+        android:onClick="oruc"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:text="Oruç Takibi"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:transitionName="button_transition" />
+
+    <Button
+        android:id="@+id/aidat_butonu"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonum"
+        android:elevation="4dp"
+        android:onClick="aidatEkranınagit"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:text="Aidat Yönetimi"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:transitionName="button_transition" />
+
+    <Button
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonum"
+        android:elevation="5dp"
+
+        android:onClick="sdksEkranınagit"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:text="HOBİLER"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:transitionName="button_transition" />
+
+    <Button
+        android:id="@+id/hedefs_butonu"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonum"
+        android:elevation="4dp"
+        android:onClick="sdkEkranınagit"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:text="SORUMLULUKLARIM"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:transitionName="button_transition" />
+
+
+</LinearLayout>

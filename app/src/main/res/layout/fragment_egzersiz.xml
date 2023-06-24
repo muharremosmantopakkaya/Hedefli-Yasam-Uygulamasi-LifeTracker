@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/borabo"
+    android:layout_height="match_parent"
+    tools:context=".EgzersizFragment">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bannerContainer">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/cardView"
+            android:layout_height="45dp"
+            android:layout_marginBottom="3dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0px"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/a1_grad"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/excerise_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="left|center_vertical|center_horizontal|center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Egzersiz"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_section"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <RelativeLayout
+                android:id="@+id/workout_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+
+                <ImageView
+                    android:id="@+id/youga_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/excerise_instruction"
+                    android:padding="20dp"
+                    android:src="@mipmap/boat_pose"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/add_exercise_button"
+                    android:layout_width="262dp"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_glow"
+                    android:backgroundTint="@color/lavender"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Egzersiz Ekle"
+                    android:textColor="#FFFFFF"></Button>
+                <TextView
+                    android:id="@+id/excerise_instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left|center_vertical|center_horizontal|center"
+                    android:text="Sukhasana"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#c3000000"
+                    android:textSize="13dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="66dp"
+                    android:gravity="center"
+                    android:text="Lütfen dinlenin"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rest_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="45dp"
+                android:orientation="vertical"
+              >
+
+                <ImageView
+                    android:id="@+id/rest_image"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:padding="20dp"
+android:visibility="gone"
+                    android:src="@mipmap/rest_person_icon" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_section"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/timer_section"
+                android:layout_width="100dp"
+
+                android:layout_height="100dp">
+
+
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="8dp"
+                    android:indeterminate="false"
+                    android:layout_centerInParent="true"
+                    android:max="100"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/custom_progressbar"
+                    android:secondaryProgress="0" />
+
+                <TextView
+                    android:id="@+id/counter"
+                    android:layout_width="22dp"
+                    android:layout_height="27dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/white_do_background"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_toRightOf="@+id/timer_section"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/start_btn_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Start"
+                    android:background="@drawable/button_glow"
+                    android:backgroundTint="@color/lavender"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="vertical" />
+</RelativeLayout>

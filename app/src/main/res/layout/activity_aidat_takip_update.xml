@@ -1,0 +1,48 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="15dp"
+    android:layout_marginTop="120dp"
+    app:cardElevation="8dp"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:background="@drawable/graph_fill_gradiant"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/updated_aidat_tarihi_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_list_background"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Güncellenmiş Aidat Tarihi"
+            android:onClick="showDatePicker"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/updated_aidat_aciklama_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/setting_list_background"
+            android:hint="Güncellenmiş Aidat Açıklaması"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/updated_aidat_tutari_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/setting_list_background"
+            android:hint="Güncellenmiş Aidat Tutarı"
+            android:padding="5dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

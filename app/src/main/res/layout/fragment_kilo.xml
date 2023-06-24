@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplanmor"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".FitnessveDiyet">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="319dp"
+        android:layout_height="258dp"
+        android:layout_margin="28dp"
+
+        android:outlineAmbientShadowColor="@color/material_dynamic_secondary95"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:text="ChatGPT ile Fitness ve Diyet Önerileri"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btnMecis"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="39dp"
+            android:background="@drawable/button_glow"
+            android:backgroundTint="@color/lavender"
+            android:fontFamily="sans-serif-black"
+            android:text="CHATGPT"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnGeri"
+        android:layout_width="134dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="270dp"
+        android:background="@drawable/button_glow"
+        android:backgroundTint="@color/lavender"
+        android:fontFamily="sans-serif-black"
+        android:text="Geri"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bakyeni"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AidatTakipActivity">
+
+    <ImageView
+        android:id="@+id/aidat_geri"
+        android:onClick="aidatgeri"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/back_arrow"
+        android:contentDescription="Coffee Image" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="319dp"
+        android:layout_height="258dp"
+        android:layout_margin="28dp"
+        android:outlineAmbientShadowColor="@color/material_dynamic_secondary95"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dnee" />
+
+        <EditText
+            android:id="@+id/aidat_tutari_edittext"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/custom_edittext"
+            android:fontFamily="sans-serif-black"
+            android:hint="Aidat tutarını girin"
+            android:inputType="numberDecimal"
+
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+
+        <EditText
+            android:id="@+id/aidat_tarihi_edittext"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/custom_edittext"
+            android:hint="Aidat tarihini girin"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/aidat_aciklama_edittext"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/custom_edittext"
+            android:hint="Aidat açıklamasını girin"
+
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/aidatlar_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/aidat_ekle_button"
+        android:layout_width="320dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/a2_grad"
+        android:fontFamily="sans-serif-black"
+        android:onClick="aidatEkle"
+        android:text="Aidat Ekle"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/aidat_goster_button"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/a2_grad"
+        android:fontFamily="sans-serif-black"
+        android:onClick="aidatGoster"
+        android:text="Aidatları Göster"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/aidat_sil_button"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/a2_grad"
+        android:fontFamily="sans-serif-black"
+        android:onClick="aidatSil"
+
+        android:text=" Tüm Aidatları Sil"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/aidat_guncelle_button"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/a2_grad"
+        android:fontFamily="sans-serif-black"
+        android:onClick="aidatGuncelle"
+        android:text="Son Aidatı Güncelle"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/listele"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/a2_grad"
+        android:fontFamily="sans-serif-black"
+        android:onClick="aidatlistele"
+        android:text="Listele"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:longClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>
+

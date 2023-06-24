@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="349dp"
+        android:layout_height="520dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <TextView
+            android:id="@+id/para_yönetimi_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:text="Para Yönetimi"
+            android:visibility="invisible"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/gider_edittext"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/baseline_money_off_24"
+            android:background="@drawable/custom_edittext"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Gider Giriniz"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/maasEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+
+
+            android:background="@drawable/custom_edittext"
+            android:hint="Maaş Giriniz"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/hesapla_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/a2_grad"
+            android:padding="16dp"
+            android:text="Hesapla" />
+
+        <TextView
+            android:id="@+id/sonuc_textview"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="16dp"
+
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ileri_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/a2_grad"
+            android:onClick="ilerii"
+            android:text="İleri" />
+
+        <EditText
+            android:id="@+id/girdi_edittext"
+            android:background="@drawable/custom_edittext"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/baseline_attach_money_24"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:layout_marginTop="100dp"
+            android:hint="Gelir Giriniz"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/a2_grad"
+        android:onClick="detaylar"
+        android:text="Detaylar" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/a2_grad"
+        android:onClick="geri"
+        android:text="Geri" />
+
+</LinearLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_secondary95"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbarTrackVertical="@null"
+    android:scrollbarThumbVertical="@drawable/ss">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="30dp"
+
+        app:cardElevation="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hedefinizi Seçin:"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupHedef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonGorunmek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daha İyi Görünmek" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSaglik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sağlığa Sağlık Katmak" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEnerjik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daha Enerjik Olmak" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDetoks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detoks ve Arınma" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKilo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kilo Vermek" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBagisiklik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bağışıklık Sistemini Güçlendirmek" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktivite Düzeyinizi Seçin:"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupAktivite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonHareketsiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hareketsiz" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHafifAktif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hafiften Aktif" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKismenAktif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kısmen Aktif" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCokAktif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Çok Aktif" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egzersiz Zamanınızı Seçin:"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupEgzersiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonSabah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Sabah" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOgle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Öğleden Sonra" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAksam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Akşam" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uyku Sürenizi Seçin:"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupUyku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonUyku9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9 Saat ve Üzeri" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUyku79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 Saat" />
+            <RadioButton
+                android:id="@+id/radioButtonUyku67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 Saat" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUyku56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 Saat" />
+
+
+
+            <RadioButton
+                android:id="@+id/radioButtonUyku5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Saat ve Altı" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinsiyetinizi Seçin:"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupCinsiyet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radioButtonErkek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Erkek" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKadin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kadın" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDiger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diğer" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yaşınızı Girin:"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextYas"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custom_edittext"
+
+            android:hint="Yaşınızı Girin:"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boyunuzu Girin (cm):"
+
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextBoy"
+            android:layout_width="330dp"
+            android:hint="Boyunuzu Girin:"
+            android:padding="13dp"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mevcut Kilonuzu Girin (kg):"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextMevcutKilo"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:hint="Mevcut Kilonuzu Girin:"
+            android:padding="13dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hedef Kilonuzu Girin (kg):"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextHedefKilo"
+            android:layout_width="330dp"
+            android:hint="Hedef Kilonuzu Girin:"
+            android:padding="13dp"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/buttonOrucPlanOlustur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/a2_grad"
+            android:text="Oruç Planını Oluştur"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/a2_grad"
+            android:onClick="geri"
+            android:text="Geri"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

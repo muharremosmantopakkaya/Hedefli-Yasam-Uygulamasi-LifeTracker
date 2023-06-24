@@ -1,0 +1,53 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:onClick="card"
+    android:longClickable="true"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="15dp"
+    android:padding="10dp"
+    android:layout_margin="13dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+    android:background="@drawable/dnee"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/aidat_aciklama_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="2dp"
+            android:text="  Aidat Açıklama"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aidat_tarihi_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:fontFamily="sans-serif"
+            android:text="  Aidat Tarihi"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aidat_tutari_edittext"
+            android:layout_width="match_parent"
+            android:padding="3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="  Aidat Tutarı"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

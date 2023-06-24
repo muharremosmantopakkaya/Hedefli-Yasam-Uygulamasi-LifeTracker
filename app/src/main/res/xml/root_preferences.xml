@@ -1,0 +1,52 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Detaylar">
+
+        <EditTextPreference
+            app:key="feedback_signature"
+            app:title="Geri Bildirim"
+            app:dialogTitle="Uygulamamızı Beğendiniz mi?"/>
+
+        <EditTextPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="payment_plan"
+            app:title="Ödeme Planı"
+            app:dialogTitle="Ödeme Planını Beğendiniz mi?" />
+        <EditTextPreference
+            app:key="feedback_signatures"
+            app:title="SSS"
+            app:dialogTitle="SSS Beğendiniz mi?"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Bize ulaşın">
+
+        <EditTextPreference
+            app:key="daily_message_signatusre"
+            app:title="Bize iletişim bilgilerini verir misin?"
+            app:useSimpleSummaryProvider="true" />
+
+
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Günlük Mesaj Mottom">
+
+        <EditTextPreference
+            app:key="daily_message_signature"
+            app:title="Bugün bize ne demek istersin?"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Genel Ayarlar">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Koyu Mod" />
+
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

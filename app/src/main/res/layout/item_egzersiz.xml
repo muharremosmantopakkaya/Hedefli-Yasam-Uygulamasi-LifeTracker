@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/egzersizImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/rest_person_icon" />
+
+    <TextView
+        android:id="@+id/egzersizName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

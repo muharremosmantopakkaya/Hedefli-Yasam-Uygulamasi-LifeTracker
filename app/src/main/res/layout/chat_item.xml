@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".FitnessveDiyet">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="497dp"
+        android:layout_above="@id/bottom_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-14dp" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="42dp"
+
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text=" ChatGPT'ye hoş geldiniz"
+        android:textColor="@color/default_color"
+        android:textSize="28dp" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="-67dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@id/send_btn"
+            android:background="@drawable/rounded_colorss"
+
+            android:gravity="top"
+            android:hint="Buraya yazın "
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:padding="13dp"
+            android:scrollbars="vertical"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_centerInParent="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/baseline_send_24s" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

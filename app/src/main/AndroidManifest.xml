@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GoalGuru"
+        tools:targetApi="31">
+        <activity
+            android:name=".hedeftab"
+            android:exported="false" />
+        <activity
+            android:name=".VkeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Faq"
+            android:label="SSS"
+            android:parentActivityName=".bottom" />
+        <activity
+            android:name=".BmiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="Geri Bildirim"
+            android:parentActivityName=".bottom" />
+        <activity
+            android:name=".AidatGoster"
+            android:label="Listeleme"
+            android:parentActivityName=".AidatTakipActivity" />
+        <activity
+            android:name=".AidatGuncelleActivity"
+            android:label="Guncelleme"
+            android:parentActivityName=".AidatGoster" />
+        <activity
+            android:name=".ExpandableList"
+            android:label="Ödeme Planı"
+            android:parentActivityName=".bottom" />
+        <activity
+            android:name=".OrucSayaciActivity"
+            android:label="Oruç Sayacı"
+            android:parentActivityName=".OrucPlanActivity" />
+        <activity
+            android:name=".OrucPlanActivity"
+            android:label="Oruç Planı"
+            android:parentActivityName=".OrucTakibi" />
+        <activity
+            android:name=".HistoryQuiz"
+            android:label="Quiz"
+            android:parentActivityName=".Hobiler" />
+        <activity
+            android:name=".MenuHomeScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizGiris"
+            android:exported="false" />
+        <activity
+            android:name=".oructab"
+            android:exported="false" />
+        <activity
+            android:name=".kilotab"
+            android:exported="false"
+            android:label="@string/title_activity_kilotab"
+            android:theme="@style/Theme.GoalGuru.NoActionBar" />
+        <activity
+            android:name=".aidattab"
+            android:exported="false" />
+        <activity
+            android:name=".tablayout"
+            android:exported="false" />
+        <activity
+            android:name=".moderndash"
+            android:exported="false" />
+        <activity
+            android:name=".dialog_forgot"
+            android:exported="false" />
+        <activity
+            android:name=".giris"
+            android:exported="false" />
+        <activity
+            android:name=".bottom"
+            android:exported="false" />
+        <activity
+            android:name=".FutbolQuizActivity"
+            android:label="Quiz"
+            android:parentActivityName=".Hobiler" />
+        <activity
+            android:name=".SonucActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrucTakibi"
+            android:label="Oruç Planı Oluşturma"
+            android:parentActivityName=".OrucTakibi" />
+        <activity
+            android:name=".Plakalarr"
+            android:label="Plakalar"
+            android:parentActivityName=".Hobiler" />
+
+        <activity
+            android:name=".Hobiler"
+            android:exported="false" />
+        <activity
+            android:name=".CapitalAdapter"
+            android:label="Quiz"
+            android:parentActivityName=".Hobiler" />
+        <activity
+            android:name=".DetaylarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="Detaylar"
+            android:parentActivityName=".Mainst" />
+        <activity
+            android:name=".QuizActivity"
+            android:label="Quiz"
+            android:parentActivityName=".Hobiler" />
+        <activity android:name=".Message" />
+        <activity android:name=".MessageAdapter" />
+
+        <activity
+            android:name=".FitnessveDiyet"
+            android:label="ChatGPT"
+            android:parentActivityName=".bottom"/>
+        <activity
+            android:name=".Capital"
+            android:label="Başkentler"
+            android:parentActivityName=".Hobiler"/>
+        <activity
+            android:name=".MainActivityDeneme2"
+            android:exported="false" />
+        <activity
+            android:name=".Main10Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Mainst"
+            android:label="Bilgi Depolamanın Tam Sırası"
+            android:parentActivityName=".bottom"/>
+        <activity
+            android:name=".UpdateActivity"
+            android:label="Güncelleme"
+            android:parentActivityName=".Mainst" />
+        <activity
+            android:name=".UploadActivity"
+            android:label="Yükleme"
+            android:parentActivityName=".Mainst" />
+        <activity
+            android:name=".Bar"
+            android:exported="false" />
+        <activity
+            android:name=".GraphHedef"
+            android:exported="false" />
+        <activity
+            android:name=".Hedeflerim"
+            android:exported="false" />
+        <activity
+            android:name=".AidatTakipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Plakalar"
+            android:label="Plakalar"
+            android:parentActivityName=".Hobiler" />
+        <activity
+            android:name=".MainActivity8"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity7"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity6"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity4"
+            android:label="Harcamalar"
+            android:parentActivityName=".bottom" />
+        <activity
+            android:name=".HarcamaListele"
+            android:label="Harcamalar"
+            android:parentActivityName=".MainActivity4" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

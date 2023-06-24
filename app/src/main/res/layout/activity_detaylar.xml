@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_login"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/maasEditText"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="4dp"
+        android:background="#30ffffff"
+        android:hint="Maaşınızı girin"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/faturaEditText"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="27dp"
+        android:background="#30ffffff"
+        android:hint="Fatura giderinizi girin"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/digerGiderEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maasEditText"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/digerGiderEditText"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="110dp"
+        android:background="#30ffffff"
+        android:hint="Diğer giderlerinizi girin"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/kalanParaTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maasEditText"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ileriButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="175dp"
+        android:onClick="ileri"
+        android:text="İleri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/hesaplaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="312dp"
+        android:onClick="hesapla"
+        android:text="Hesapla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/kalanParaTextView"
+        android:layout_width="101dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/btn1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/hesaplaButton"
+        app:layout_constraintTop_toTopOf="@+id/hesaplaButton" />
+
+    <TextView
+        android:id="@+id/kalanParaValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/kalanParaTextView"
+        app:layout_constraintTop_toTopOf="@+id/kalanParaTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

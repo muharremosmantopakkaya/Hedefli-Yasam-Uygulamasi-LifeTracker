@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/ic_launcher_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity4">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-20dp"
+        android:layout_height="325dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/harcama_tutar_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/baseline_attach_money_24"
+        android:hint=" Harcama Tutarı"
+        android:layout_margin="2dp"
+        android:background="@drawable/setting_list_background"
+        android:inputType="numberDecimal"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/harcama_aciklama_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="16dp"
+        android:hint=" Harcama Açıklaması"
+        android:drawableLeft="@drawable/outline_edit_note_24"
+        android:layout_margin="2dp"
+        android:background="@drawable/setting_list_background"
+        android:padding="16dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/harcama_ekle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/a2_grad"
+        android:onClick="harcamaEkle"
+        android:padding="16dp"
+        android:text="Harcama Ekle"
+        android:textColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/harcama_recyclerview"
+
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+
+</LinearLayout>

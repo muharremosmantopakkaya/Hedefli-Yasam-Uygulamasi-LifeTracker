@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/hedef_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vücut Ağırlığını Düzenleme Hedefi"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/hedef_deger_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hedef Değer: "
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/hedef_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hedef Değerini Giriniz"
+        android:inputType="numberDecimal"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/mevcut_deger_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mevcut Değer: "
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/mevcut_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mevcut Değerini Giriniz"
+        android:inputType="numberDecimal"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/hesapla_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ssss"
+        android:onClick="hesapla"
+        android:padding="16dp"
+        android:text="Hesapla"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/sonuc_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ssss"
+        android:onClick="ilerigit"
+        android:text="Diyet Analizi Yap"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ssss"
+        android:onClick="gerigit"
+        android:layout_marginTop="20dp"
+        android:text="Geri"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

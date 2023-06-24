@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:background="@drawable/bakyeni"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".GelirFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="337dp"
+        android:layout_height="473dp"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/material_dynamic_tertiary90"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <EditText
+            android:id="@+id/etTarih"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:drawableLeft="@drawable/baseline_calendar_month_24"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittext"
+            android:hint=" Tarih"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etTutar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="90dp"
+            android:drawableLeft="@drawable/baseline_attach_money_24"
+            android:background="@drawable/custom_edittext"
+            android:hint=" Tutar"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etKategori"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/custom_edittext"
+            android:hint=" Kategori"
+            android:drawableLeft="@drawable/baseline_category_24"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etHesap"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="215dp"
+            android:background="@drawable/custom_edittext"
+            android:hint=" Hesap"
+            android:drawableLeft="@drawable/baseline_attach_money_24"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etNot"
+            android:layout_width="324dp"
+            android:padding="10dp"
+            android:layout_height="143dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="8dp"
+
+            android:background="@drawable/custom_edittext"
+            android:hint="   Not \n\n\n\n "
+            android:gravity="top|left
+" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:padding="10dp"
+        android:layout_marginTop="-11dp"
+        android:background="@drawable/a2_grad"
+        android:fontFamily="sans-serif-black"
+        android:text="Kaydet"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnGeri"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/a2_grad"
+        android:fontFamily="sans-serif-black"
+        android:text="Geri"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/ic_launcher_background"
+    android:layout_height="match_parent"
+    tools:context=".EisenhowerFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:padding="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/material_dynamic_secondary95"
+        android:layout_margin="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Görev"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTask"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/white_box"
+            android:hint="Görevi yazın"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aciliyet Durumu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupUrgency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radioButtonUrgent">
+
+            <RadioButton
+                android:id="@+id/radioButtonUrgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acil" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNotUrgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acil Değil" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Önem Durumu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+        <RadioGroup
+            android:id="@+id/radioGroupImportance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radioButtonImportant">
+
+            <RadioButton
+                android:id="@+id/radioButtonImportant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Önemli" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNotImportant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Önemli Değil" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/buttonAddTask"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="22dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_glow"
+            android:backgroundTint="@color/lavender"
+            android:fontFamily="sans-serif-black"
+            android:text="Görevi Ekle"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonClearMatrix"
+            android:layout_width="285dp"
+            android:layout_height="58dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/button_glow"
+            android:backgroundTint="@color/lavender"
+            android:fontFamily="sans-serif-black"
+            android:text="Tüm Tabloyu Sil"
+            android:textColor="#FFFFFF" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_dot_red" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acil Önemli"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_dot_green" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acil Değil Önemli"
+
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/ssss" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acil Önemli Değil"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="17dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/white_box" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Acil Değil Önemli Değil"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

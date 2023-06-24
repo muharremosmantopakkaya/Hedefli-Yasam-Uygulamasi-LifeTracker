@@ -1,0 +1,58 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:layout_margin="15dp"
+    android:layout_marginTop="120dp"
+    app:cardElevation="8dp"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/graph_fill_gradiant"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/updated_aidat_tarihi_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:focusable="false"
+            android:background="@drawable/setting_list_background"
+            android:clickable="true"
+            android:hint="Güncellenmiş Aidat Tarihi"
+            android:onClick="showDatePicker" />
+
+        <EditText
+            android:id="@+id/updated_aidat_aciklama_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/setting_list_background"
+            android:hint="Güncellenmiş Aidat Açıklaması"
+            />
+
+        <EditText
+            android:id="@+id/updated_aidat_tutari_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_list_background"
+            android:hint="Güncellenmiş Aidat Tutarı"
+            android:padding="5dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/guncelle_button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_glow"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:onClick="guncelleAidat"
+            android:text="Güncelle" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
